@@ -35,9 +35,10 @@ function Footer() {
             <div className='brands'>
                     <ul>
                         <li><h3>Brands</h3></li>
-                        <li><a href="#">About Bigix</a></li>
+                        <li><a href="/about">About Bigix</a></li>
                         <li><a href="#">EnterpriseOne</a></li>
-                        <li><a href="#">FastraSuite</a></li>
+                        <li><a href="https://www.fastrasuite.com"
+                        target='_blank' rel='noopener noreferrer'>FastraSuite</a></li>
                         <li><a href="#">PlacementHub</a></li>
                     </ul>
             </div>
@@ -45,9 +46,9 @@ function Footer() {
             <div className='services'>
                     <ul>
                         <li><h3>Services</h3></li>
-                        <li><a href="#">Managed IT Services</a></li>
-                        <li><a href="#">Security Surveillance</a></li>
-                        <li><a href="#">Digital Transformation</a></li>
+                        <li className='list'>Managed IT Services</li>
+                        <li className='list'>Security Surveillance</li>
+                        <li className='list'>Digital Transformation</li>
                     </ul>
                     <div className="socials">
                         <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,19 +56,19 @@ function Footer() {
                         <path d="M19.5 10.1667H17.75C16.9765 10.1667 16.2346 10.474 15.6876 11.021C15.1407 11.568 14.8334 12.3099 14.8334 13.0834V14.8334H13.0834V17.1667H14.8334V21.8334H17.1667V17.1667H18.9167L19.5 14.8334H17.1667V13.0834C17.1667 12.9287 17.2282 12.7803 17.3376 12.6709C17.447 12.5615 17.5953 12.5001 17.75 12.5001H19.5V10.1667Z" fill="white"/>
                         </svg>
                         </a>
-                        <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://x.com/bigfixtechng" target='_blank'><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="32" height="32" rx="16" fill="#00B4D8"/>
                         <path d="M22.4167 10.75C21.8581 11.144 21.2396 11.4454 20.585 11.6425C20.2337 11.2386 19.7668 10.9522 19.2475 10.8223C18.7281 10.6923 18.1814 10.725 17.6813 10.9159C17.1811 11.1068 16.7516 11.4467 16.4509 11.8897C16.1503 12.3326 15.9929 12.8572 16 13.3925V13.9758C14.9749 14.0024 13.9591 13.7751 13.0431 13.314C12.1271 12.853 11.3394 12.1725 10.75 11.3333C10.75 11.3333 8.41671 16.5833 13.6667 18.9167C12.4653 19.7322 11.0342 20.141 9.58337 20.0833C14.8334 23 21.25 20.0833 21.25 13.375C21.2495 13.2125 21.2339 13.0504 21.2034 12.8908C21.7987 12.3037 22.2189 11.5624 22.4167 10.75Z" fill="white"/>
                         </svg>
                         </a>
-                        <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.linkedin.com/company/bigfix-integrated-technologies/" target='_blank'><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="32" height="32" rx="16" fill="#00B4D8"/>
                         <path d="M18.3333 13.6667C19.2615 13.6667 20.1517 14.0355 20.8081 14.6919C21.4645 15.3483 21.8333 16.2385 21.8333 17.1667V21.2501H19.4999V17.1667C19.4999 16.8573 19.377 16.5606 19.1582 16.3418C18.9394 16.123 18.6427 16.0001 18.3333 16.0001C18.0238 16.0001 17.7271 16.123 17.5083 16.3418C17.2895 16.5606 17.1666 16.8573 17.1666 17.1667V21.2501H14.8333V17.1667C14.8333 16.2385 15.202 15.3483 15.8584 14.6919C16.5148 14.0355 17.405 13.6667 18.3333 13.6667Z" fill="white"/>
                         <path d="M12.5 14.25H10.1666V21.25H12.5V14.25Z" fill="white"/>
                         <path d="M11.3333 12.5001C11.9776 12.5001 12.5 11.9777 12.5 11.3334C12.5 10.6891 11.9776 10.1667 11.3333 10.1667C10.689 10.1667 10.1666 10.6891 10.1666 11.3334C10.1666 11.9777 10.689 12.5001 11.3333 12.5001Z" fill="white"/>
                         </svg>
                         </a>
-                        <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.instagram.com/bigfixtechng/" target='_blank'><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="32" height="32" rx="16" fill="#00B4D8"/>
                         <path d="M18.9167 10.1667H13.0834C11.4726 10.1667 10.1667 11.4726 10.1667 13.0834V18.9167C10.1667 20.5276 11.4726 21.8334 13.0834 21.8334H18.9167C20.5276 21.8334 21.8334 20.5276 21.8334 18.9167V13.0834C21.8334 11.4726 20.5276 10.1667 18.9167 10.1667Z" fill="white"/>
                         <path d="M18.3333 15.6324C18.4053 16.1179 18.3224 16.6137 18.0964 17.0494C17.8703 17.485 17.5127 17.8383 17.0743 18.0589C16.6359 18.2796 16.1391 18.3564 15.6545 18.2784C15.17 18.2004 14.7224 17.9716 14.3753 17.6246C14.0283 17.2776 13.7995 16.8299 13.7215 16.3454C13.6436 15.8608 13.7204 15.364 13.941 14.9256C14.1617 14.4873 14.5149 14.1296 14.9506 13.9036C15.3862 13.6775 15.882 13.5946 16.3675 13.6666C16.8627 13.74 17.3212 13.9708 17.6751 14.3248C18.0291 14.6788 18.2599 15.1372 18.3333 15.6324Z" stroke="#00B4D8" stroke-linecap="round" stroke-linejoin="round"/>

@@ -78,11 +78,11 @@
       text-align: center;
     }
   
-    .hero h1 {
+    /* .hero h1 {
       font-size: 2.5rem;
       margin-top: 1rem;
       line-height: 1;
-    }
+    } */
   
     .big-line {
         display: none;
@@ -95,6 +95,39 @@
       text-align: right;
     }
 
+    .integrate h1 {
+      margin-top: 0.8rem;
+    }
+
+    .integration {
+      display: flex;
+      flex-direction: row;
+      margin-top: 3rem;
+      margin-left: 1.2rem;
+    }
+
+    .integration h1 {
+      margin-right: 10px;
+      font-size: 2.25rem;
+    }
+
+    .integration .we {
+      position: absolute;
+      margin-top: -1rem;
+      margin-left: 6.9rem;
+      
+    }
+
+    .integration .big {
+      font-size: 4rem;
+      margin-top: -1rem;
+    }
+
+    .integration .we, .integration .big {
+      color: #141B34;
+      
+    }
+
     .hero button {
       font-size: 1.4rem;
       text-align: center;
@@ -104,7 +137,10 @@
       font-size: 1rem;
       margin: 1rem 0;
       text-align: right;
+      margin-top: -2rem;
     }
+
+
   
     /* Cards Section */
     .card-container {
@@ -192,13 +228,13 @@
 
     .first-logos, .second-logos {
         flex-direction: row; 
-        margin: 1rem 2rem;
+        margin: 0.5rem 2rem;
         gap: 1rem;
     }
     
     .first-logos svg, .second-logos svg {
         width: 70px;
-        height: 30px;
+        height: 50px;
         gap: 1rem;
         margin-top: 1.5rem;
 
@@ -213,7 +249,11 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 3rem 2rem;
-        width: 100%;
+    }
+
+    .goals {
+      margin-right: 0;
+      line-height: 1.5;
     }
 
     .our-company h1, .our-company h3, .our-company p {
@@ -256,7 +296,6 @@
     .card1 {
         background-color: #FBFBFB;
         padding: 2rem;
-        width: 100%;
     }
     
     .blue {

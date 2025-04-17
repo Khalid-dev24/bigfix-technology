@@ -1,11 +1,40 @@
-import React from 'react';
-import Background from '../assets/background.png'
-import MissionImg from '../assets/mission-img.png'
-import EmailImg from '../assets/emailcampaign.png'
+import React, { useRef }from 'react';
+import Background from '../assets/background.png';
+import MissionImg from '../assets/mission-img.png';
+import EmailImg from '../assets/emailcampaign.png';
+import emailjs from "@emailjs/browser";
 
 
 
 function About() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm(
+          'service_sbar5s7',     
+          'template_4hyyqvf',   
+          form.current,
+          'iBEISXMC9xdG9p1NZ'      
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Message sent successfully!");
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Failed to send message.");
+          }
+        );
+    };
+
+
+
+
     return (
         <div className='about-page'>
 
@@ -223,9 +252,9 @@ function About() {
                 <div className="subscribe-form">
                     <h2>Subscribe to our Newsletter</h2>
                     <p>Receive our Latest News from Bigfix <br />Integrated Technologies</p>
-                    <form>
-                        <input type="text" placeholder="Your Name" /><br />
-                        <input type="email" placeholder='Your Email' /><br />
+                    <form ref={form} onSubmit={sendEmail}>
+                        <input type="text" name= "name"placeholder="Your Name" required/><br />
+                        <input type="email" name= "email"placeholder='Your Email' required/><br />
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
